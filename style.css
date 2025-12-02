@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 html, body {
   overflow-x: hidden;
 }
@@ -137,20 +140,20 @@ header .right img {
   font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.hire{
+.hire, .viewproject-btn{
   background-color: #bf00ffda;
   cursor: pointer;
   
 }
-.hire:hover {
+.hire:hover,.viewproject-btn:hover {
   background-color: #D100FF; /* slightly brighter on hover */
   transform: translateY(-2px);
 }
-.cv{
+.cv,.sourcecode-btn{
   background-color: #6a0dadb8;
   cursor: pointer;
 }
-.cv:hover {
+.cv:hover,.sourcecode-btn:hover {
   background-color: #7C1ECF; /* lighter shade on hover */
   transform: translateY(-2px);
 }
@@ -182,12 +185,12 @@ header .right img {
 }
 
 /* skill-section */
-.skill-logo{
+.skill-logo, .project-logo{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 28px;
   margin-left: 45px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .skils{
   display: flex;
@@ -234,3 +237,54 @@ header .right img {
   transform: scale(1.2);
   filter: drop-shadow(0 0 8px #a855f7);
 }
+
+.project{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #1A1B2D;
+  height: auto;
+  max-height: 500px;
+  width: auto;
+   max-width: 500px;
+  margin-left: 45px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+  border-radius: 10px;
+  height: 300px;
+  width: 480px;
+}
+/* title of project */
+.project h3{    
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 28px;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+.project p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 50;
+  font-size: 15px;
+  line-height: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.project_buttons{
+  display: flex;
+  gap: 10px;
+} 
+.viewproject-btn, .sourcecode-btn{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
